@@ -10,4 +10,10 @@ If you want a multi-page site, add Vue Router or use multiple HTML pages or Jeky
 
 If you want the dev tooling (for linting, minification and using `.vue` files) or have a large site, then a traditional Node and NPM approach to Vue might suit you better.
 
+See Vue quickstart below and follow the steps on the PrimeVue site's Quickstart guide to add PrimeVue to your site.
+
 - [![MichaelCurrin - vue-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=vue-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/vue-quickstart)
+
+See also the official quickstart project, for Vue and PrimeVue already integrated.
+
+[![primefaces - primevue-quickstart](https://img.shields.io/static/v1?label=primefaces&message=primevue-quickstart&color=blue&logo=github)](https://github.com/primefaces/primevue-quickstart)

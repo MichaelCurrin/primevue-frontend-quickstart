@@ -35,13 +35,15 @@ What you get with this project:
 
 You could even mix your JS and CSS into one HTML file, if you wanted to only have one file. But you'll probably want to separate those for easier management.
 
-A Vue frontend project only needs 3 files to run, as set up in this template:
+A PrimeVue / Vue frontend project only needs 3 files to run, as set up in this template:
 
 - [index.html](/index.html)
     - HTML homepage.
+    - Including CSS around PrimeVue, including a chosen theme.
+    - Including an **import map** for JS dependencies.
 - [main.js](/main.js)
     - The app logic in JS.
-    - This loads dependencies, constructs the app and then mounts it on an element in the body. The demo components are based on the [Introduction](https://v3.vuejs.org/guide/introduction.html) tutorial on the Vue 3 docs. But without IDs - as those are for the app level rather than reusable component level.
+    - This loads dependencies, constructs the app and then mounts it on an element in the body.
 - [styles.css](/styles.css)
     - Some minimal CSS styling, to match the Vue CLI quickstart.
 
