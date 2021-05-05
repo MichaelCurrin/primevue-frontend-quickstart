@@ -10,7 +10,23 @@
     <meta name="description"
         content="Starter template for a PrimeVue site - without Node or a build step">
 
+    <link rel="stylesheet"
+        href="https://unpkg.com/primevue@3.4.0/resources/themes/saga-blue/theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/primevue@3.4.0/resources/primevue.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/primeicons@4.1.0/primeicons.css" />
+
     <link rel="stylesheet" href="styles.css">
+
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3.0.7/dist/vue.esm-browser.js",
+            "primevue/utils": "https://unpkg.com/primevue@3.4.0/utils/utils.esm.js",
+            "primevue/ripple": "https://unpkg.com/primevue@3.4.0/ripple/ripple.esm.js",
+            "primevue/button": "https://unpkg.com/primevue@3.4.0/button/button.esm.js"
+          }
+        }
+    </script>
 
     <script defer type="module" src="main.js"></script>
 </head>
@@ -25,6 +41,16 @@
             <img src="https://img.shields.io/static/v1?label=MichaelCurrin&message=primevue-frontend-quickstart&color=blue&logo=github"
                 alt="MichaelCurrin - primevue-frontend-quickstart">
         </a>
+
+        <p><b>Notice for non-Chrome users</b>
+
+            This site uses <a
+                href="https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/modules/import-maps.html">importmaps</a>,
+            which are not supported on all browsers yet.
+
+            Unfortunately, the PrimeVue Button import relies on the scripts and these
+            only load if an import map is set.
+        </p>
     </header>
 
     <div id="app"></div>
