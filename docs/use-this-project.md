@@ -7,7 +7,7 @@
 
 </div>
 
-How to setup:
+How to set up:
 
 1. Add this project to your repos with the template button above (no need to fork).
 2. Go to your repo's _Settings_ and enable _GitHub Pages_.
