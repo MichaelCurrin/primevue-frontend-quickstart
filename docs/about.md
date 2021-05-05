@@ -3,7 +3,11 @@
 
 ## What is PrimeVue?
 
-See my [Resources](https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/vue/) page to learn more about Vue.
+> The Most Complete Vue UI Component Library
+
+See my [PrimeVue resources][] page to learn more.
+
+[PrimeVue resources]: https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/primevue/
 
 
 ## Features
