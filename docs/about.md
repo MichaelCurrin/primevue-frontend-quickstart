@@ -9,6 +9,8 @@ See my [PrimeVue resources][] page to learn more.
 
 [PrimeVue resources]: https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/primevue/
 
+It's easy to change your theme when using PrimeVue. Just change the path for the `.css` import to use Material UI, Bootstrap, etc. and your preferred color scheme. All your HTML and JS can stay the same. The same classes are used for a different theme and you don't even have to add classes yourself because PrimeVue components handle that for you.
+
 
 ## Features
 
@@ -46,7 +48,3 @@ A PrimeVue / Vue frontend project only needs 3 files to run, as set up in this t
     - This loads dependencies, constructs the app and then mounts it on an element in the body.
 - [styles.css](/styles.css)
     - Some minimal CSS styling, to match the Vue CLI quickstart.
-
-### Logo
-
-The [assets](/assets/) directory was set up with a logo, to match the structure and appearance of the Vue CLI quickstart app. But you can delete that on your copy of this template.
