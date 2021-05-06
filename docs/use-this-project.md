@@ -14,5 +14,3 @@ How to set up:
 3. After a few seconds, open your site deployed at `MyUsername.github.io/primevue-frontend-quickstart`.
 
 If you want to run the web app locally, just start a static server in the repo root. See recommended server options in this [gist](https://gist.github.com/MichaelCurrin/1a6116a4e0918c8468dc7e1a701a5f95).
-
-See [Extending](extending.md) for ideas on what to do next with your project.
