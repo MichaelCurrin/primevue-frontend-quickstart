@@ -9,8 +9,6 @@
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
 
 
-**Warning** - the site will not display correctly on Firefox until `importmaps` support is added.
-
 ## Preview
 > What the web app looks like locally or on GH Pages
 
