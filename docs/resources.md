@@ -6,4 +6,4 @@ I found this [PrimeVue 3 released][] blog post which announced PrimeVue 3 launch
 
 I used `demo.html` page from the [button][] directory on the CDN as a starting point for this app.
 
-[button]: https://unpkg.com/browse/primevue@2.2.3/components/button/)
+[button]: https://unpkg.com/browse/primevue@2.2.3/components/button/
