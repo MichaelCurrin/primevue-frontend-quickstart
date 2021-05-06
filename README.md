@@ -9,6 +9,9 @@
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
 
 
+I found it a hassle choose the the correct versions of ES Modules libraries, to get imports to work for Vue and PrimeVue and to set up import maps so to not break. So while this project does demonstrate how to use a bit of code to get PrimeVue styling on a Vue app without Node, there might be more obstacles like this which means the Node approach might be easier.
+
+
 ## Preview
 > What the web app looks like locally or on GH Pages
 
@@ -30,8 +33,9 @@
 
 
 ## Documentation
+> How to use this template to make or extend a project
 
-How to use this template to make or extend a project. Plus more info on this project, PrimeVue and Vue.
+Plus more info on this project, PrimeVue and Vue.
 
 <div align="center">
 
