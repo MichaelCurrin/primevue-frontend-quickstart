@@ -30,7 +30,8 @@
 
 
 ## Documentation
-> How to use this template to make and extend a project and more info on this project and Vue
+
+How to use this template to make or extend a project. Plus more info on this project, PrimeVue and Vue.
 
 <div align="center">
 
