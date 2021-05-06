@@ -41,11 +41,6 @@ Plus more info on this project, PrimeVue and Vue.
 </div>
 
 
-## Note
-
-I found it a hassle and several days of hacking away in order to choose the the correct versions of ES Modules libraries, to get imports to work for Vue and PrimeVue and to set up import maps so to not break. So, while this project does demonstrate how to use a bit of code to get PrimeVue styling on a Vue app without Node, there might be more obstacles like this which means the Node approach might be easier.
-
-
 ## License
 
 Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
