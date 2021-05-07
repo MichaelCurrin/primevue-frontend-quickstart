@@ -1,4 +1,4 @@
-# Prime Frontend Quickstart docs
+# PrimeVue Frontend Quickstart docs
 
 A simple project that uses PrimeVue on the frontend, without using Node or a build or compile step.
 
