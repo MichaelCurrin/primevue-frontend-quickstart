@@ -16,7 +16,7 @@ That then relies on the `primevue/utils` and `primevue/ripple` imports.
 - [button.esm.js](https://unpkg.com/primevue@3.4.0/button/button.esm.js) on the UNPKG CDN.
     ```javascript
     import Ripple from 'primevue/ripple';
-    import { resolveDirective, withDirectives, openBlock, createBlock, renderSlot, createCommentVNode, createVNode, toDisplayString } from 'vue';
+    import { resolveDirective, withDirectives, toDisplayString } from 'vue';
     
     // ...
     ```
