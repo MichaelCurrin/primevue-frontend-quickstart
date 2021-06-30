@@ -2,6 +2,10 @@
 
 Notes for developers on this template.
 
+I didn't have an issue on my Vue Frontend Quickstart, but because of the nature of PrimeVue components I had to use import maps to stop imports from breaking.
+
+Here are my notes around that.
+
 
 ## Adding supporting imports
 
@@ -19,9 +23,9 @@ That then relies on the `primevue/utils` and `primevue/ripple` imports.
 
 That works fine in Node. 
 
-But, when loading in the browser because `primevue/ripple` appears as an external package not known to the browser. (It it was `./primevue/ripple` then it could have worked, loading from the same CDN.)
+But, when loading in the browser, the import for `primevue/ripple` appears as an external package and is not known to the browser. (It it was `./primevue/ripple` then it could have worked, loading from the same CDN.)
 
-### Import maps withj UNPKG
+### Import maps with UNPKG
 
 An effective way to fix this was to add to the `importmaps` section in the [index.html](/index.html) page. So now import for `primevue/ripple` in the external script is mapped to a CDN URL.
 
