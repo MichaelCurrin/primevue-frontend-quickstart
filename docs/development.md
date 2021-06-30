@@ -5,11 +5,54 @@ Notes for developers on this template.
 
 ## Adding supporting imports
 
-The PrimeVue `Button` import from `primevue/button` and relies on the `primevue/utils` and `primevue/ripple` imports.
+The PrimeVue `Button` import is from `primevue/button`.
 
-This is fine in Node, but when loading in the browser, these give errors because they are not relative imports like `./primevue`.
+That then relies on the `primevue/utils` and `primevue/ripple` imports.
 
-An effective way to fix this was to add to the `importmaps` section in the [index.html](/index.html) page, such that when `Button` is loaded from the CDN, it sees the other imports as also on the CDN.
+- [button.esm.js](https://unpkg.com/primevue@3.4.0/button/button.esm.js) on the UNPKG CDN.
+    ```javascript
+    import Ripple from 'primevue/ripple';
+    import { resolveDirective, withDirectives, openBlock, createBlock, renderSlot, createCommentVNode, createVNode, toDisplayString } from 'vue';
+    
+    // ...
+    ```
+
+That works fine in Node. 
+
+But, when loading in the browser because `primevue/ripple` appears as an external package not known to the browser. (It it was `./primevue/ripple` then it could have worked, loading from the same CDN.)
+
+### Import maps withj UNPKG
+
+An effective way to fix this was to add to the `importmaps` section in the [index.html](/index.html) page. So now import for `primevue/ripple` in the external script is mapped to a CDN URL.
+
+So when the `Button` is loaded from the CDN, the internal imports are done correctly.
+
+### Import maps with JPSM
+
+I set that up by hand. But if you use JSPN as you CDN instead, you can use the service's Import Map Generator.
+
+In this case, I entered `primevue/button` as a package and got the following generated import map:
+
+```html
+<script type="importmap">
+{
+"imports": {
+  "primevue/button": "https://ga.jspm.io/npm:primevue@3.5.1/button/button.esm.js"
+},
+"scopes": {
+  "https://ga.jspm.io/npm:primevue@3.5.1/": {
+    "primevue/ripple": "https://ga.jspm.io/npm:primevue@3.5.1/ripple/ripple.esm.js",
+    "primevue/utils": "https://ga.jspm.io/npm:primevue@3.5.1/utils/utils.esm.js",
+    "vue": "https://ga.jspm.io/npm:vue@2.6.14/dist/vue.runtime.esm.js"
+  }
+}
+}
+</script>
+```
+
+That uses Vue 2. Even if I added Vue 3 as a dependency explicitly, Vue 2 is still used under scopes.
+
+It looks like using PrimeVue 3.5.1 means also using Vue 2. Though in my own import map I set up Vue 3 and use that for my JS script. So maybe that is okay.
 
 
 ## Import maps polyfill
