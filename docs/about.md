@@ -7,8 +7,6 @@
 
 See my [PrimeVue resources][] page to learn more.
 
-[PrimeVue resources]: https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/primevue/
-
 It's easy to change your theme when using PrimeVue. Just change the path for the `.css` import to use Material UI, Bootstrap, etc. and your preferred color scheme. All your HTML and JS can stay the same. The same classes are used for a different theme and you don't even have to add classes yourself because PrimeVue components handle that for you.
 
 
@@ -28,8 +26,6 @@ What you get with this project:
     - No need for `package.json` or other JS configs.
 - Use this as a standalone project, or use it as a reference to add Vue to your site.
 
-[ES Modules]: https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/modules/es-modules.html
-
 
 ## Structure
 
@@ -43,8 +39,12 @@ A PrimeVue / Vue frontend project only needs 3 files to run, as set up in this t
     - HTML homepage.
     - Includes CSS around PrimeVue, including a chosen theme.
     - Includes use of an **import map** with a polyfill, to make JS imports easier.
-- [main.js](/main.js)
+- [assets/js/main.js](/assets/js/main.js)
     - The app logic as a JS script.
     - This loads dependencies, constructs the app and then mounts it on an element in the body.
-- [styles.css](/styles.css)
+- [assets/css/styles.css](/assets/css/styles.css)
     - Some minimal CSS styling, to match the Vue CLI quickstart.
+
+
+[PrimeVue resources]: https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/primevue/
+[ES Modules]: https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/modules/es-modules.html
