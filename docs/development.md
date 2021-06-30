@@ -18,4 +18,4 @@ Note that import maps are not widely supported yet. So a **polyfill** was used i
 
 See [Import maps][] cheatsheet for more info.
 
-[Import maps]: https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/modules/import-maps.html)
+[Import maps]: https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/modules/import-maps.html
